@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi tienda</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div style="background-color: #fbfbfb; color: #111111; border-left: 2px solid #b8860b; padding: 36px 32px; max-width: 700px; margin: 0 auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-shadow: 0 10px 30px rgba(0,0,0,0.04);">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+      <span style="font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #888888;"></span>
+      <span style="font-size: 12px; letter-spacing: 1px; color: #b8860b; font-weight: 500;">Ingrid Ximena Diaz</span>
+    </div>
+    <h1 style="font-size: 28px; font-weight: 300; margin: 0 0 16px 0; letter-spacing: 2px; text-transform: uppercase;">
+      Hermès Luxury Edit
+    </h1>
+    <p style="font-size: 14px; color: #555555; margin: 0; font-weight: 300; letter-spacing: 0.5px; line-height: 1.6;">
+      “La elegancia no es destacar, sino ser recordado a través del tiempo.”
+    </p>
+  </div>
+
+  <div class="beneficios">
+    <span>🚚 Envíos en Bogotá</span>
+    <span>🔒 Compra segura</span>
+    <span>📦 Seguimiento de pedido</span>
+  </div>
+
+  <div id="productos"></div>
+
+  <div class="carrito">
+    <h2>🧾 Carrito de Compras</h2>
+
+    <ul id="lista-carrito"></ul>
+
+    <div class="resumen">
+      <p>
+        Envío: <strong>Gratis</strong>
+      </p>
+
+      <p class="total">
+        Total: $<span id="total">0</span>
+      </p>
+    </div>
+
+    <button class="vaciar" onclick="vaciarCarrito()">
+      🧼 Vaciar Carrito
+    </button>
+
+    <button class="finalizar" onclick="finalizarCompra()">
+      ✅ Finalizar Compra
+    </button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
